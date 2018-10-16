@@ -9,24 +9,24 @@ namespace _LINQ_Practice_Problems
     class Program
     {
         static void Main(string[] args)
-        { 
-        //    //Return list that contains substrings
-        //    List<string> wordList = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
-        //    var newWordList = wordList.Where(word => word.Contains("th"));
-        //    foreach (var word in newWordList)
-        //    {
-        //        Console.WriteLine(word);
-        //    }
-        //    Console.ReadLine();
+        {
+            //Return list that contains substrings
+            List<string> wordList = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+            var newWordList = wordList.Where(word => word.Contains("th"));
+            foreach (var word in newWordList)
+            {
+                Console.WriteLine(word);
+            }
+            Console.ReadLine();
 
-        //    //Return a copy of a list without any duplicates
-        //    List<string> nameList = new List<string>() { "Mike", "Dan", "Scott", "Nick", "Mike",  };
-        //    var newNameListNoDuplicates = nameList.GroupBy(name => name).Select(name => name.First());
-        //    foreach (var name in newNameListNoDuplicates)
-        //    {
-        //        Console.WriteLine(name);
-        //    }
-        //    Console.ReadLine();
+            //Return a copy of a list without any duplicates
+            List<string> nameList = new List<string>() { "Mike", "Dan", "Scott", "Nick", "Mike", };
+            var newNameListNoDuplicates = nameList.GroupBy(name => name).Select(name => name.First());
+            foreach (var name in newNameListNoDuplicates)
+            {
+                Console.WriteLine(name);
+            }
+            Console.ReadLine();
 
             //Getting Over All Average
             List<string> classGrades = new List<string>()
@@ -40,6 +40,18 @@ namespace _LINQ_Practice_Problems
 
             Console.WriteLine(overallAverage);
 
+            Console.ReadLine();
+
+
+            string randomString = "TERILL";
+            var letterFrequencyString = randomString.GroupBy(x => x).Select(x => x.Key + "" + x.Count()).OrderBy(x => x);
+
+            StringBuilder newString = new StringBuilder();
+            foreach (string x in letterFrequencyString)
+            {
+                newString.Append(x).Append("|");
+            }
+            Console.WriteLine(newString);
             Console.ReadLine();
         }
     }
