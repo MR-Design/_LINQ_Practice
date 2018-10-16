@@ -10,6 +10,9 @@ namespace _LINQ_Practice_Problems
     {
         static void Main(string[] args)
         {
+            ListWithoutDuplicates ListWithoutDuplicates = new ListWithoutDuplicates();
+            ListWithoutDuplicates.Comparing();
+            Console.ReadLine();
         }
     }
 }
