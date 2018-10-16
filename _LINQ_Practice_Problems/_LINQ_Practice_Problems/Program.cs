@@ -10,6 +10,9 @@ namespace _LINQ_Practice_Problems
     {
         static void Main(string[] args)
         {
+            _Linq link = new _Linq();
+            link.FindWords();
+
         }
     }
 }
