@@ -10,7 +10,6 @@ namespace _LINQ_Practice_Problems
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
             //Return list that contains substrings
             List<string> wordList = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
             var newWordList = wordList.Where(word => word.Contains("th"));
@@ -54,12 +53,6 @@ namespace _LINQ_Practice_Problems
             }
             Console.WriteLine(newString);
             Console.ReadLine();
-=======
-            _Linq link = new _Linq();
-            //link.FindWords();
-
-            link.Copy_list_without_duplicates();
->>>>>>> 36dc58f4b2443592877c3de13518aa6921004d83
         }
     }
 }
